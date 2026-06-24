@@ -152,6 +152,10 @@ Let's see this in code:
 # First: the function to read a BRAT annotation file into a data frame
 # it's very similar to what we created in the previous badge.
 
+install.packages("stringr")
+library(stringr)
+
+
 read_brat_file <- function(file_path) {
   ann_data <- readLines(file_path)
   
